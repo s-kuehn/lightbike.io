@@ -76,8 +76,8 @@ function paintGame(state) {
     ctx.fillRect(food.x * size, food.y * size, size, size)
     
     // Choose color for each player
-    paintPlayer(state.players[0], size, '#6589eb')
-    paintPlayer(state.players[1], size, '#bf042a')
+    paintPlayer(state.players[playerNumber], size, '#6589eb')
+    paintPlayer(state.players[state.players.length - playerNumber], size, '#bf042a')
 
 }
 
