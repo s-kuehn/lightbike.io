@@ -1,4 +1,4 @@
-const frameRate = 15
+const frameRate = 12
 const gridSize = 40
 
 module.exports = {

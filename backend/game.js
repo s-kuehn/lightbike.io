@@ -16,7 +16,7 @@ function createGameState() {
     return {
         players: [{
             pos: {
-                x: 20,
+                x: 10,
                 y: 3,
             },
             vel: {
@@ -24,13 +24,13 @@ function createGameState() {
                 y: 1,
             },
             snake: [
-                {x: 20, y: 1},
-                {x: 20, y: 2},
-                {x: 20, y: 3},
+                {x: 10, y: 1},
+                {x: 10, y: 2},
+                {x: 10, y: 3},
             ],
         }, {
             pos: {
-                x: 20,
+                x: 30,
                 y: 36,
             },
             vel: {
@@ -38,9 +38,9 @@ function createGameState() {
                 y: -1,
             },
             snake: [
-                {x: 20, y: 38},
-                {x: 20, y: 37},
-                {x: 20, y: 36},
+                {x: 30, y: 38},
+                {x: 30, y: 37},
+                {x: 30, y: 36},
             ],
         }],
         food: {},
