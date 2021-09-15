@@ -1,8 +1,9 @@
 const io = require('socket.io')({
     cors: {
-        origin: 'https://lightbike.io',
-        methods: ["GET", "POST"],
-        credentials: true
+        origin: ['https://lightbike.io', "*"],
+        methods: ["GET", "POST", "OPTIONS"],
+        credentials: true,
+        headers: ["Origin", "Content-Type", "Accept"]
       }
 })
 const { createGameState, gameLoop, getUpdatedVelocity, initGame } = require('./game')
