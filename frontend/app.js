@@ -4,7 +4,7 @@ const bgColor = '#231f20'
 const snakeColor = trailColors[Math.floor(Math.random() * trailColors.length)]
 const foodColor = '#e66916'
 
-const socket = io('http://localhost:3000')
+const socket = io('https://thawing-meadow-76731.herokuapp.com/')
 
 socket.on('init', handleInit)
 socket.on('gameState', handleGameState)
