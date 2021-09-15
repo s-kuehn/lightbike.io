@@ -1,6 +1,6 @@
 const io = require('socket.io')({
     cors: {
-        origin: ['*:*'],
+        origin: ['https://lightbike.io', "*"],
         methods: ["GET", "POST", "OPTIONS"],
         credentials: true,
         headers: ["Origin", "Content-Type", "Accept"]
