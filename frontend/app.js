@@ -1,7 +1,7 @@
-const trailColors = ['#eff77d', '#4ab2ff', '#b3f0ef', '#f75100', '#cd0000', '#1173b7']
+// const trailColors = ['#eff77d', '#4ab2ff', '#b3f0ef', '#f75100', '#cd0000', '#1173b7']
 
 const bgColor = '#231f20'
-const snakeColor = trailColors[Math.floor(Math.random() * trailColors.length)]
+// const snakeColor = trailColors[Math.floor(Math.random() * trailColors.length)]
 const foodColor = '#e66916'
 
 const socket = io('https://thawing-meadow-76731.herokuapp.com/')
@@ -76,8 +76,8 @@ function paintGame(state) {
     ctx.fillRect(food.x * size, food.y * size, size, size)
     
     // Choose color for each player
-    paintPlayer(state.players[0], size, snakeColor)
-    paintPlayer(state.players[1], size, snakeColor)
+    paintPlayer(state.players[0], size, '#6589eb')
+    paintPlayer(state.players[1], size, '#bf042a')
 
 }
 

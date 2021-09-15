@@ -105,11 +105,11 @@ function gameLoop(state) {
         if (eatApple) {
             setTimeout( () => {
                 playerOne.snake.shift()
-            }, 5000)
+            }, 3000)
         } else {
             setTimeout( () => {
                 playerOne.snake.shift()
-            }, 5000)
+            }, 3000)
         }
     }
 
