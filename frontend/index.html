@@ -13,9 +13,42 @@
     <section>
         <div class="container">
 
+
+            <div id="initial-screen">
+
+                <div class="quick-join-container">
+
+                    <h1 class="game-title">LightBike.io</h1>
+
+                    <div class="username-container">
+                        <input id="username-input" type="text" placeholder="Enter Username:">
+                    </div>
+
+                    <button type="submit" id="quick-join-button">Quick Join</button>                    
+
+                </div>
+
+            
+
+            <div class="private-game-container">
+                <h1>Private Game</h1>
+                <p>Play With Your Friends!</p>
+                <button type="submit" id="new-game-button">Create New Game</button>
+                <h4>OR</h4>
+                <div class="form">
+                    <input type="text" placeholder="Enter Game Code" id="game-code-input">
+                    <button type="submit" id="join-game-button">Join Game</button>
+                </div>
+            </div>
+
+        </div>
+
+
             <div id="game-screen">
 
                 <div class="game-container">
+
+                    <h1>Your game code is: <span id="game-code-display"></span></h1>
 
                     <canvas id="canvas"></canvas>
 
