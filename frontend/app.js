@@ -4,7 +4,7 @@ const bgColor = '#231f20'
 // const snakeColor = trailColors[Math.floor(Math.random() * trailColors.length)]
 const foodColor = '#e66916'
 
-const socket = io.connect('http://localhost:3000');
+const socket = io.connect('https://lightbike-server.onrender.com');
 
 socket.on('init', handleInit)
 socket.on('gameState', handleGameState)
